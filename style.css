@@ -1,0 +1,31 @@
+header{
+    height: 100px;
+    margin-bottom: 10px;
+    border: solid;
+    text-align: center;
+
+}
+
+nav{
+    width: 300px;
+    height: 400px;
+    margin-right: 50px;
+    border: solid;
+}
+
+main {
+    height: 400px;
+    margin-left: 10px;
+    border: solid;
+
+}
+
+footer {
+    height: 200px;
+    margin-top: 10px;
+    border: solid;
+}
+.textfooter{
+    font-size: large;
+    text-align: center;
+}
