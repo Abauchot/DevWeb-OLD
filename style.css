@@ -1,22 +1,19 @@
-header{
-    height: 100px;
-    margin-bottom: 10px;
+header {
     border: solid;
     text-align: center;
 
 }
 
-nav{
-    width: 300px;
-    height: 400px;
-    margin-right: 50px;
+nav {
+
+
     border: solid;
 }
 
 main {
-    height: 400px;
-    margin-left: 10px;
-    border: solid;
+
+    border: solid 1px black;
+    border-right: transparent;
 
 }
 
@@ -25,7 +22,20 @@ footer {
     margin-top: 10px;
     border: solid;
 }
-.textfooter{
+
+.textfooter {
     font-size: large;
     text-align: center;
+    margin: 10px;
+}
+
+.listfootercontact {
+    font-size: medium;
+    text-align: center;
+    margin: 10px;
+}
+
+header .header__image{
+    margin: auto;
+    width: 50%;
 }
