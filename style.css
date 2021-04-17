@@ -1,5 +1,5 @@
 header {
-    border: solid;
+
     text-align: center;
 
 }
@@ -7,12 +7,11 @@ header {
 nav {
 
 
-    border: solid;
 }
 
 main {
 
-    border: solid 1px black;
+
     border-right: transparent;
 
 }
@@ -20,7 +19,7 @@ main {
 footer {
     height: 200px;
     margin-top: 10px;
-    border: solid;
+
 }
 
 .textfooter {
@@ -35,7 +34,7 @@ footer {
     margin: 10px;
 }
 
-header .header__image{
+header .header__image {
     margin: auto;
     width: 50%;
 }
