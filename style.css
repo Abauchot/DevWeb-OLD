@@ -12,8 +12,6 @@ nav {
 main {
 
 
-    border-right: transparent;
-
 }
 
 footer {
@@ -39,55 +37,43 @@ header .header__image {
     width: 50%;
 }
 
-#menu-global {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-#menu li a{
-    display: block;
-    line-height : 1.1em;
-    color: black;
-    padding :5px;
-    font-size : larger;
-}
-
-#menu-horizontal li{
+#menu-horizontal li {
     display: inline-block;
     padding: 10px;
 }
 
-#menu-rolling-1 ul{
+#menu-rolling-1 ul {
     list-style: none;
-    max-height : 0;
+    max-height: 0;
     overflow: hidden;
-    }
-#menu-rolling-1 li:hover ul {
+
+}
+
+#menu-rolling-1 li :hover ul {
     max-height: 15em;
-    list-style: none;
     list-style: none;
 }
 
-#menu-rolling-2 ul{
+#menu-rolling-2 ul {
     list-style: none;
-    max-height : 0;
+    max-height: 0;
     overflow: hidden;
 }
+
 #menu-rolling-2 li:hover ul {
     max-height: 15em;
     list-style: none;
-    list-style: none;
+
 }
 
-#menu-rolling-3 ul{
+#menu-rolling-3 ul {
     list-style: none;
-    max-height : 0;
+    max-height: 0;
     overflow: hidden;
 }
+
 #menu-rolling-3 li:hover ul {
     max-height: 15em;
     list-style: none;
-    list-style: none;
+
 }
