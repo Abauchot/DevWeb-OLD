@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>test</title>
+    <meta charset="utf-8">
+    <title> Je suis un test</title>
+    <style>
+        #fond
+        {
+            position: absolute;
+            left : 15%;
+            top : 15%;
+            width: 80%;
+            height: 80%;
+            border-style: none;
+            background-color : orange;
+            color : white;
+            visibility: visible;
+        }
+        #carre{
+            position: absolute;
+            left : 10%;
+            top : 10%;
+            width : 10%;
+            height: 10%;
+            background-color : blue;
+            color : white;
+            visibility : visible;
+        }
+    </style>
+    <script language="javascript">
+        function changerOn(event){
+            document.getElementById('carre').style.background="red";
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = "X coords: "+ x + "Y coords : "+y;
+            document.getElementById("demo").innerHTML = coords;
+
+            document.getElementById("carre").style.left= x-170+"px";
+            document.getElementById("carre").style.top= y-100+"px";
+        }
+
+    </script>
+
 </head>
 <body>
+<p id="demo"></p>
+<div id="fond" onClick="Javascript : changerOn(event);">
+    <div id="carre">
+
+    </div>
+</div>
+
+
+
 
 </body>
 </html>
