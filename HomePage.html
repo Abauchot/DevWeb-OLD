@@ -7,32 +7,28 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <title>L'univers Game Workshop</title>
-    <script language="javascript">
-        function Fonction(){
-
-        }
-    </script>
+    <script src="main.js" async></script>
 </head>
+
 <body>
+
+<header class="row">
+    <img class="header__image" src="games-workshop-logo-png-1.png">
+    <div class="col-2">
+        <ul id="menu-horizontal">
+            <li><a href="log%20in.html" title="Connectez vous"> Log in/ Sign in</a></li>
+            <li><a href="Cart.html" title="Votre panier">Cart</a></li>
+        </ul>
+    </div>
+</header>
+
 <div class="container-fluid">
-    <header class="row">
-        <img class="header__image" src="games-workshop-logo-png-1.png">
-        <div class="col-2">
-            <ul id="menu-horizontal">
-                <li><a href="log%20in.html" title="Connectez vous"> Log in/ Sign in</a></li>
-                <li><a href="Cart.html" title="Votre panier">Cart</a></li>
-            </ul>
-        </div>
-    </header>
+    <nav class="row">
+        <div class="col-4 text-center">
 
-    <!--
-    <div class="row">
-        <nav class="col-2">
-
-            <h4> les différents univers :</h4>
-            <ul id="menu-rolling-1">
+            <ul id="menu-rolling">
                 <li>
-                    <a href="AgeOfSigmar.html">Age Of Sigmar</a>
+                    <a href="AgeOfSigmar.html"><img class="aos__nav" src="AOS_Logo.webp"></a>
                     <ul>
                         <li> Grand Alliance Order</li>
                         <li>Grand Alliance Chaos</li>
@@ -42,11 +38,12 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
 
                 </li>
             </ul>
+        </div>
 
-
-            <ul id="menu-rolling-2">
+        <div class="col-4 text-center">
+            <ul id="menu-rolling-1">
                 <li>
-                    <a href="Warhammer%2040.000.html"> Warhammer40.000 </a>
+                    <a href="Warhammer%2040.000.html"> <img class="war__nav" src="40k-nav-logo.webp"> </a>
                     <ul>
                         <li>Space Marine</li>
                         <li>Armées de l'Impérium</li>
@@ -55,11 +52,12 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
                     </ul>
                 </li>
             </ul>
+        </div>
 
-
-            <ul id="menu-rolling-3">
+        <div class="col-4 text-center">
+            <ul id="menu-rolling-2">
                 <li>
-                    <a href="MiddleEarth.html"> Middle Earth Stategy Battle Game </a>
+                    <a href="MiddleEarth.html"> <img class="md__nav" src="LOTR_Logo.webp"> </a>
                     <ul>
                         <li>The Lord of the Rings : Force du Bien</li>
                         <li>The Lord of the Rings : Force du Mal</li>
@@ -68,17 +66,15 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
                     </ul>
                 </li>
             </ul>
+        </div>
 
-        </nav>
-        -->
+    </nav>
+
 
     <main class="col-12">
         <div class="row">
             <div class="col-9">
-                <script language="javascript">
-                    alert("Bonjour, notre site utilise des cookies, veuillez accepter en cliquant.")
-                    Fonction();
-                </script>
+
 
                 <h1 id="titleProduct"> QUELS SONT NOS NOS PRODUITS ?</h1>
                 <h3 id="titrehobby"> La collection, le hobby : </h3>
@@ -135,8 +131,12 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
                     Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
                     consequatur,
                     vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-
+                <div class="carousel__main">
                 <img class="main__WG" src="warhammer-underworlds-1024x492.jpg">
+                <img class="war__sig" src="war_sigmar.jpg">
+                <img class="war__40k" src="war_40k.jpg">
+                <img class="war__md" src="war_md.jpg">
+                    </div>
             </div>
         </div>
     </main>
