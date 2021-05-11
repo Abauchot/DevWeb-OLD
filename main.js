@@ -1,17 +1,10 @@
-class Carousel{
+("#carousel__main").carousel();
 
-    constructor(element, options = {}){
-        this.element = element
-        this.options = Object.assign({}),{
-            slidesToScroll : 1,
-            slidesVisible : 1,
-        }, option
-        debugger
-    }
-}
+(".item").click(function){
+    ("#carousel__main").carousel(1);
+});
 
-document.addEventListener("DOMContentLoaded", function()){
-    new Carousel (document.querySelector('#carousel__main')),{
-        slidesToScroll : 1,
-    }
-}
+(".left").click(function){
+    ("#carousel__main"). carousel("prev"):
+});
+

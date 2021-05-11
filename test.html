@@ -3,52 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title> Je suis un test</title>
-    <style>
-        #fond
-        {
-            position: absolute;
-            left : 15%;
-            top : 15%;
-            width: 80%;
-            height: 80%;
-            border-style: none;
-            background-color : orange;
-            color : white;
-            visibility: visible;
-        }
-        #carre{
-            position: absolute;
-            left : 10%;
-            top : 10%;
-            width : 10%;
-            height: 10%;
-            background-color : blue;
-            color : white;
-            visibility : visible;
-        }
-    </style>
-    <script language="javascript">
-        function changerOn(event){
-            document.getElementById('carre').style.background="red";
-            var x = event.clientX;
-            var y = event.clientY;
-            var coords = "X coords: "+ x + "Y coords : "+y;
-            document.getElementById("demo").innerHTML = coords;
+    <style type="text/css">
 
-            document.getElementById("carre").style.left= x-170+"px";
-            document.getElementById("carre").style.top= y-100+"px";
+
+    </style>
+    <script language="JavaScript">
+        function test(){
+            var x = document.getElementById("pid");
+            x.innerHTML="Bye";
         }
 
     </script>
-
 </head>
 <body>
-<p id="demo"></p>
-<div id="fond" onClick="Javascript : changerOn(event);">
-    <div id="carre">
+<p id="pid">Bonjour.</p>
+<input type="bouton" name="bye" value="Non ? " onclick="javascript:test()";>
 
-    </div>
-</div>
 
 
 
