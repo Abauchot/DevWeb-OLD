@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <title> Je suis un test</title>
     <style type="text/css">
-
-
     </style>
-    <script language="JavaScript">
-        function test(){
-            var x = document.getElementById("pid");
-            x.innerHTML="Bye";
-        }
+    <script language="javascript">
+        function MonterPositionSouris(event){
+            var x = event.clientX;
+            var y = event.clientY;
 
+            var coords = "X.coords :" + x + "Y.coords : " + y ;
+            document.getElementsById("demo").innerHTML = coord;
+        }
     </script>
+
 </head>
 <body>
-<p id="pid">Bonjour.</p>
-<input type="bouton" name="bye" value="Non ? " onclick="javascript:test()";>
+<h4 onclick="MontrerPositionSouris(event)"> Première ligne du texte <br> <br> deuxième ligne du texte</h4>
+<p id="demo"></p>
+
+<div id="test" onclick="Javascript:MonterPositionSouris(event)";></div>
+
 
 
 
