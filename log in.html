@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Connectez vous</title>
+    <meta charset="UTF-8" name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylelogin.css"/>
 </head>
+<header class="row">
+    <img class="header__image" src="games-workshop-logo-png-1.png">
+    <div class="col-2">
+    </div>
+</header>
+
+
 <body>
 
+<div class="loginform">
+    <form>
+        <div class="form-group">
+            <label class="email-log"> Adresse mail : </label>
+            <input type="email" class="form-control" id="email-log" placeholder="Entrer votre email">
+        </div>
+
+        <div class="form-group">
+            <label class="pass-log"> Mot de passe : </label>
+            <input type="password" class="form-control" id="pass-log" placeholder="Entrer votre mot de passe">
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" class="checkbox-input" id="checklog">
+            <label class="form-check-label" for="checklog"> Rester connecté.e</label>
+        </div>
+        <button type="button" class="btn-primary submit">Connecter vous</button>
+    </form>
+</div>
+
+
 </body>
+
+
 </html>
