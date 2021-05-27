@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" name="description" content="Retrouver tout sur l'univers de Games Workshop. Si vous êtes passionnés
-ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos produits ici.">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
@@ -13,22 +12,61 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
 <body>
 
 <header class="row">
-    <img class="header__image" src="games-workshop-logo-png-1.png">
+    <img class=" img-fluid header__image" src="games-workshop-logo-png-1.png">
     <div class="col-2">
-        <ul id="menu-horizontal">
-            <li><a href="log%20in.html" title="Connectez vous"> Log in/ Sign in</a></li>
-            <li><a href="Cart.html" title="Votre panier">Cart</a></li>
-        </ul>
+        <button type="button" class="btn-secondary btn-lg" id="logbtn">Connectez vous</button>
+        <div id="modalLog" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form>
+                    <div class="form-group">
+                        <label class="email-log"> Adresse mail : </label>
+                        <input type="email" class="form-control" id="email-log" placeholder="Entrez votre email">
+                        <label class="pass-log"> Mot de passe : </label>
+                        <input type="password" class="form-control" id="pass-log" placeholder="Votre mot de passe">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" class="checkbox-input" id="checklog">
+                        <label class="form-check-label" for="checklog"> Rester connecté.e</label>
+                        <p>Vous avez oublié votre mot de passe ? cliquez <b>ici</b></p>
+                    </div>
+                    <button type="button" class="btn-primary submit">Valider</button>
+                </form>
+            </div>
+
+            <script>
+                let modal = document.getElementById("modalLog");
+
+                let btn = document.getElementById("logbtn");
+
+                let span = document.getElementsByClassName("close")[0];
+
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+
+        </div>
     </div>
 </header>
 
 <div class="container-fluid">
     <nav class="row">
-        <div class="col-4 text-center">
+        <div class="col-md-4 text-center">
 
             <ul id="menu-rolling">
                 <li>
-                    <a href="AgeOfSigmar.html"><img class="aos__nav" src="AOS_Logo.webp"></a>
+                    <a href="AgeOfSigmar.html"><img class="img-fluid aos__nav" src="AOS_Logo.webp"></a>
                     <ul>
                         <li> Grand Alliance Order</li>
                         <li>Grand Alliance Chaos</li>
@@ -40,7 +78,7 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
             </ul>
         </div>
 
-        <div class="col-4 text-center">
+        <div class=" col-md-4 text-center">
             <ul id="menu-rolling-1">
                 <li>
                     <a href="Warhammer%2040.000.html"> <img class="war__nav" src="40k-nav-logo.webp"> </a>
@@ -54,7 +92,7 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
             </ul>
         </div>
 
-        <div class="col-4 text-center">
+        <div class=" col-md-4 text-center">
             <ul id="menu-rolling-2">
                 <li>
                     <a href="MiddleEarth.html"> <img class="md__nav" src="LOTR_Logo.webp"> </a>
@@ -93,9 +131,7 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
 
     <main class="col-12">
         <div class="row">
-            <div class="col-9">
-
-
+            <div class="col-md-9">
                 <h1 id="titleProduct"> QUELS SONT NOS NOS PRODUITS ?</h1>
                 <h3 id="titrehobby"> La collection, le hobby : </h3>
                 <p class="hobby">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -121,9 +157,19 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                     anim
                     id est
-                    laborum</p>
+                    laborum
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum</p>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <img class="img-fluid" src="hobby.jpg">
             </div>
         </div>
@@ -153,7 +199,7 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
                     consequatur,
                     vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
 
-                <img class="main__WG" src="warhammer-underworlds-1024x492.jpg">
+                <img class="img-fluid main__WG" src="warhammer-underworlds-1024x492.jpg">
             </div>
         </div>
 
@@ -166,10 +212,10 @@ ou bien vous avez envie d'apprendre à jouer au War Games : retrouver tous nos p
     <div class="col-4 text-center">
         <h4>Nos réseaux sociaux :</h4>
         <ul>
-            <li><img class="footer__fb" src="facebook-logo-2019-1597680-1350125.png"> <img class="footer__tw"
+            <li><img class=" img-fluid footer__fb" src="facebook-logo-2019-1597680-1350125.png"> <img class="footer__tw"
                                                                                            src="logo-twitter-bleu.png">
             </li>
-            <li><img class="footer__yt" src="youtube.png"> <img class="footer__twi" src="twitch.png"></li>
+            <li><img class="img-fluid footer__yt" src="youtube.png"> <img class="footer__twi" src="twitch.png"></li>
         </ul>
     </div>
 
