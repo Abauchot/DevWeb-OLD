@@ -9,17 +9,16 @@ nav {
 }
 
 
-main {
-}
+
 #titleProduct {
     text-align: center;
     font-style: italic;
 }
 
-main .main__WG {
+main .main__cc {
     margin: auto;
     display: flex;
-    width: 50%;
+
 }
 
 
@@ -91,6 +90,8 @@ header .header__image {
     list-style: none;
     max-height: 0;
     overflow: hidden;
+    text-align: center;
+    padding: inherit;
 
 }
 
@@ -105,23 +106,29 @@ header .header__image {
     list-style: none;
     max-height: 0;
     overflow: hidden;
+
 }
 
 #menu-rolling-1 li:hover ul {
     max-height: 15em;
-    list-style: none;
+    text-align: center;
+    padding: inherit;
+
+
 
 }
 
 #menu-rolling-2 ul {
     list-style: none;
     max-height: 0;
+    list-style: none;
     overflow: hidden;
 }
 
 #menu-rolling-2 li:hover ul {
     max-height: 15em;
     list-style: none;
+    padding: inherit;
 
 }
 
@@ -138,9 +145,7 @@ header .header__image {
 
 
 
-.modal{
 
-}
 .close{
     color : #aaaaaa;
     font-size : 28px;
@@ -161,4 +166,16 @@ header .header__image {
     width: 40%;
 
 }
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+
+}
+.wargame{
+    font-size: large;
+    text-align: justify;
+
+}
+.active
 
