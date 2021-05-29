@@ -177,5 +177,7 @@ header .header__image {
     text-align: justify;
 
 }
-.active
+.carousel-inner img{
+    margin : auto;
+}
 
