@@ -19,7 +19,12 @@
     <img class=" img-fluid header__image" src="games-workshop-logo-png-1.png">
     <div class="col-md-2 text-center text-md-end">
         <button type="button" class="btn-secondary btn-lg mb-3" id="logbtn">Connectez vous</button>
+        
     </div>
+
+
+
+
 </header>
 
 <div class="container-fluid">
@@ -183,6 +188,62 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <h3>Notre selection de produit pour bien commencer : </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid2">
+                            <div class="product-image2"><a href="#"> <img class="img-fluid pic-1"
+                                                                          src="warhammer-40000-edition-etat-major.jpg">
+                                <img class="img-fluid pic-2"
+                                     src="WH40KRecruitEditionGroup1.jpg">
+                            </a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Warhammer 40,000 Édition État-major</a></h3> <span
+                                    class="price">130 €<br></span>
+                                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Produit ajouter au panier">
+                                    Ajouter au panier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid2">
+                            <div class="product-image2"><a href="#"> <img class="img-fluid pic-1" src="SoulWars_.jpg">
+                                <img class="img-fluid pic-2" src="soulwars_forces.jpg"> </a>
+
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Warhammer Age Of Sigmar Soul Wars</a></h3> <span class="price">125 €<br></span>
+                                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Produit ajouter au panier">
+                                    Ajouter au panier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid2">
+                            <div class="product-image2"><a href="#"> <img class="img-fluid pic-1" src="smPaint1.jpg">
+                                <img class="img-fluid pic-2" src="SMPaintSet02.jpg"> </a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Kit de départ pour assembler et peindre Spaces Marines Warhammer 40 000</a>
+                                </h3> <span class="price">30 €<br></span>
+                                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Produit ajouter au panier">
+                                    Ajouter au panier
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -255,7 +316,7 @@
 <div class="cookie-container justify-content-center">
     <div class="card p-3 cookie">
         <span>Ce site utilise des cookies pour vous offrir une expérience personnalisée<br></span>
-        <a href="#">En Apprendre plus ici<i class="fa fa-angle-right ml-2"></i></a>
+        <a href="#">En apprendre plus ici<i class="fa fa-angle-right ml-2"></i></a>
         <div class="mt-4 text-right">
             <button class="btn btn-light btn-sm" type="button" id="declineCookie">Refuser tous les cookies</button>
             <button class="btn btn-light btn-sm" type="button" id="allowCookie">Accepter tous les cookies</button>
@@ -287,13 +348,17 @@
     let btnAllow = document.getElementById("allowCookie");
     let btnDecline = document.getElementById("declineCookie");
 
-    btnAllow.onclick=function () {
-        cookie.style.display="none";
+    btnAllow.onclick = function () {
+        cookie.style.display = "none";
 
     }
-    btnDecline.onclick=function () {
-        cookie.style.display="none";
+    btnDecline.onclick = function () {
+        cookie.style.display = "none";
     }
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
 
 
 </script>
