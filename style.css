@@ -130,6 +130,9 @@ header .header__image {
     right :0;
     text-align: right;
 }
+.modal {
+    background: rgba(0,0,0,.5);
+}
 .modal-content {
     position : absolute;
     background-color: #fefefe;
@@ -138,7 +141,6 @@ header .header__image {
     margin : auto;
     left: 0%;
     right: 0%;
-
 
 }
 
@@ -301,6 +303,10 @@ h3.h3 {
     .product-grid2 {
         margin-bottom: 30px
     }
+}
+
+.offcanvas{
+    z-index : 1060;
 }
 
 

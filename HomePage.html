@@ -19,7 +19,21 @@
     <img class=" img-fluid header__image" src="games-workshop-logo-png-1.png">
     <div class="col-md-2 text-center text-md-end">
         <button type="button" class="btn-secondary btn-lg mb-3" id="logbtn">Connectez vous</button>
-        
+
+        <button class="btn btn-secondary btn-lg mb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#panierRight"
+                aria-controls="panierRight">Votre Panier</button>
+
+        <div class="offcanvas offcanvas-end" data-bs-backdrop="true" tabindex="2" id="panierRight" aria-labelledby="panierRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="panierRightLabel">Votre Panier</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+
+            </div>
+        </div>
+
     </div>
 
 
@@ -290,10 +304,10 @@
 
     </div>
 </footer>
-<div id="modalLog" class="modal">
+<div id="modalLog" class="modal" data-bs-backdrop="true">
     <div class="modal-dialog modal-xl modal-dialog-centered ">
         <div class="modal-content text-center">
-            <span class="close">&times;</span>
+            <span class="close"><button type="button" class="btn-close" disabled aria-label="Close"></button></span>
             <form>
                 <div class="form-group">
                     <label class="email-log"> Adresse mail : </label>
@@ -358,6 +372,11 @@
     let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    let offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+    let offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+        return new bootstrap.Offcanvas(offcanvasEl)
     })
 
 
